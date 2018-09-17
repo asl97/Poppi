@@ -1,0 +1,108 @@
+diff --git a/Poppi/Defs/Pawn/Poppi.xml b/Poppi/Defs/Pawn/Poppi.xml
+index 7550f7b..9f3e768 100644
+--- a/Poppi/Defs/Pawn/Poppi.xml
++++ b/Poppi/Defs/Pawn/Poppi.xml
+@@ -12,7 +12,7 @@
+     <statBases>
+       <MoveSpeed>25</MoveSpeed>
+       <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+-	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
++      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+       <MarketValue>350</MarketValue>
+       <MeatAmount>15</MeatAmount>
+     </statBases>
+@@ -32,22 +32,20 @@
+       <baseBodySize>0.2</baseBodySize>
+       <baseHungerRate>0.8</baseHungerRate>
+       <baseHealthScale>0.4</baseHealthScale>
+-	  <predator>false</predator>
+-	  <manhunterOnDamageChance>.2</manhunterOnDamageChance>
+-	  <petness>.8</petness>
++      <predator>false</predator>
++      <manhunterOnDamageChance>.2</manhunterOnDamageChance>
++      <petness>.8</petness>
+       <packAnimal>false</packAnimal>
+       <foodType>OmnivoreRoughAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
+-      <leatherColor>(255,215,0)</leatherColor>
+-	  <leatherLabel>poppi fur</leatherLabel>
+-      <leatherInsulation>1.5</leatherInsulation>
++      <leatherDef>PoppiFur</leatherDef>
+       <executionRange>5</executionRange>
+       <wildness>0.4</wildness>
+       <mateMtbHours>4</mateMtbHours>
+       <nuzzleMtbHours>40</nuzzleMtbHours>
+-	  <trainableIntelligence>Intermediate</trainableIntelligence>
++      <trainability>Intermediate</trainability>
+       <canBePredatorPrey>false</canBePredatorPrey>
+       <gestationPeriodDays>3</gestationPeriodDays>
+-	  <wildBiomes>
++      <wildBiomes>
+         <SeaIce>0.0</SeaIce>
+         <IceSheet>0.01</IceSheet>
+         <Tundra>0.08</Tundra>
+@@ -132,7 +130,7 @@
+     <label>poppi</label>
+     <race>Poppi</race>
+     <combatPower>60</combatPower>
+-    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
++    <ecoSystemWeight>0.30</ecoSystemWeight>
+     <lifeStages>
+       <li>
+         <bodyGraphicData>
+diff --git a/Poppi/Defs/Resources/Poppi_Resources.xml b/Poppi/Defs/Resources/Poppi_Resources.xml
+index a3c748c..1ad6b09 100644
+--- a/Poppi/Defs/Resources/Poppi_Resources.xml
++++ b/Poppi/Defs/Resources/Poppi_Resources.xml
+@@ -8,24 +8,21 @@
+     </graphicData>
+     <statBases>
+       <MaxHitPoints>60</MaxHitPoints>
+-      <MarketValue>5.0</MarketValue>
+-      <Mass>0.003</Mass>
++      <MarketValue>4.6</MarketValue>
++      <Mass>0.03</Mass>
+       <Flammability>0.1</Flammability>
+       <DeteriorationRate>1</DeteriorationRate>
++      <StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp>
++      <StuffPower_Armor_Blunt>0.8</StuffPower_Armor_Blunt>
++      <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+     </statBases>
+-    <stackLimit>100</stackLimit>
+     <stuffProps>
+       <categories>
+         <li>Fabric</li>
+       </categories>
+-      <commonality>0.10</commonality>
++      <commonality>0.16</commonality>
+       <statFactors>
+-        <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+-        <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+-        <ArmorRating_Heat>1.5</ArmorRating_Heat>
+-        <ArmorRating_Electric>1.4</ArmorRating_Electric>
+-        <Insulation_Cold>1.3</Insulation_Cold>
+-        <Insulation_Heat>1.5</Insulation_Heat>
++        <Flammability>0.1</Flammability>
+       </statFactors>
+     </stuffProps>
+     <thingCategories>
+@@ -40,14 +37,13 @@
+     <graphicData>
+       <color>(255,248,193)</color>
+     </graphicData>
++    <statBases>
++      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
++      <StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
++    </statBases>
+     <stuffProps>
+       <color>(255,248,193)</color>
+-      <commonality>0.10</commonality>
+-      <statOffsets>
+-        <Insulation_Cold>-20</Insulation_Cold>
+-        <Insulation_Heat>30</Insulation_Heat>
+-      </statOffsets>
+     </stuffProps>
+   </ThingDef>
+   
+-</Defs>
+\ No newline at end of file
++</Defs>
