@@ -1,3 +1,25 @@
+diff --git a/Poppi/About/About.xml b/Poppi/About/About.xml
+index c6c94a8..a9b4177 100644
+--- a/Poppi/About/About.xml
++++ b/Poppi/About/About.xml
+@@ -3,8 +3,8 @@
+ <ModMetaData>
+ 	<name>Poppi</name>
+ 	<author>Dianne (art) and Torann (code)</author>
+-	<targetVersion>0.18.0</targetVersion>
+-	<description>Version 0.18.1
++	<targetVersion>0.19.2009</targetVersion>
++	<description>Version 0.19.0
+ This mod adds the adorable Poppi as an animal you can find and recruit to be the lovable colony mascot!
+ 
+ Not only do they warm your heart, Poppi fur is an excellent insulator and makes a soft, golden material that offers the height of fashion and comfort for any apparel.
+@@ -21,4 +21,4 @@ Poppi can be found it most biomes due to their insulating fur, but are more like
+ 
+ This mod requires A RimWorld of Magic to be loaded before it in the load order.
+ 	</description>
+-</ModMetaData>
+\ No newline at end of file
++</ModMetaData>
 diff --git a/Poppi/Defs/Pawn/Poppi.xml b/Poppi/Defs/Pawn/Poppi.xml
 index 7550f7b..9f3e768 100644
 --- a/Poppi/Defs/Pawn/Poppi.xml
