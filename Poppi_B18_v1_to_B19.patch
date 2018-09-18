@@ -21,18 +21,20 @@ index c6c94a8..a9b4177 100644
 \ No newline at end of file
 +</ModMetaData>
 diff --git a/Poppi/Defs/Pawn/Poppi.xml b/Poppi/Defs/Pawn/Poppi.xml
-index 7550f7b..9f3e768 100644
+index 7550f7b..8efaaeb 100644
 --- a/Poppi/Defs/Pawn/Poppi.xml
 +++ b/Poppi/Defs/Pawn/Poppi.xml
-@@ -12,7 +12,7 @@
+@@ -12,8 +12,8 @@
      <statBases>
        <MoveSpeed>25</MoveSpeed>
        <ComfyTemperatureMin>-45</ComfyTemperatureMin>
 -	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+-      <MarketValue>350</MarketValue>
 +      <ComfyTemperatureMax>60</ComfyTemperatureMax>
-       <MarketValue>350</MarketValue>
++      <MarketValue>700</MarketValue>
        <MeatAmount>15</MeatAmount>
      </statBases>
+     <tools>
 @@ -32,22 +32,20 @@
        <baseBodySize>0.2</baseBodySize>
        <baseHungerRate>0.8</baseHungerRate>
@@ -62,11 +64,22 @@ index 7550f7b..9f3e768 100644
          <SeaIce>0.0</SeaIce>
          <IceSheet>0.01</IceSheet>
          <Tundra>0.08</Tundra>
-@@ -132,7 +130,7 @@
+@@ -123,7 +121,7 @@
+ 		</li>	
+     </comps>
+     <tradeTags>
+-      <li>StandardAnimal</li>
++      <li>AnimalExotic</li>
+     </tradeTags>
+   </ThingDef>
+ 
+@@ -131,8 +129,8 @@
+     <defName>Poppi</defName>
      <label>poppi</label>
      <race>Poppi</race>
-     <combatPower>60</combatPower>
+-    <combatPower>60</combatPower>
 -    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
++    <combatPower>75</combatPower>
 +    <ecoSystemWeight>0.30</ecoSystemWeight>
      <lifeStages>
        <li>
